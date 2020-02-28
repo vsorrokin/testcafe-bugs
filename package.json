@@ -5,6 +5,7 @@
     "test": "testcafe chrome ./test --debug-on-fail"
   },
   "dependencies": {
+    "handlebars": "^4.7.3",
     "serve": "^11.3.0",
     "simple-server": "^1.1.1"
   },
