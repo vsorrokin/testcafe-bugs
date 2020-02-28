@@ -1,0 +1,13 @@
+{
+  "name": "testcafe-bugs",
+  "scripts": {
+    "start": "simple-server ./ 8001",
+    "test": "testcafe chrome ./test --debug-on-fail"
+  },
+  "dependencies": {
+    "simple-server": "^1.1.1"
+  },
+  "devDependencies": {
+    "testcafe": "^1.8.2"
+  }
+}
