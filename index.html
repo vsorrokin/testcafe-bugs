@@ -2,22 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Testcafe</title>
-    <script src="https://cdn.jsdelivr.net/npm/node-forge@0.7.0/dist/forge.min.js"></script>
+    <title>Testcafe Hammerhead</title>
   </head>
   <body>
     <div id="message"></div>
 
     <script>
-
-
       var t0 = performance.now();
 
-      forge.pki.rsa.generateKeyPair({bits: 4096, workerScript: ''}, function(err, pair) {
-        var t1 = performance.now();
+      let arr = [];
 
-        document.querySelector('#message').textContent = `Pair generated. Time: ${t1 - t0}ms`;
-      });
+      for (let i = 0; i < 5000000; i++) {
+        arr[i] += 64;
+      }
+
+      var t1 = performance.now();
+
+      document.querySelector('#message').textContent = `Finished. Time: ${t1 - t0}ms`;
 
     </script>
   </body>

@@ -2,7 +2,7 @@
   "name": "testcafe-bugs",
   "scripts": {
     "start": "simple-server ./ 8001",
-    "test": "testcafe chrome ./test --debug-on-fail"
+    "test": "testcafe --ssl='key=./ssl/universa.com-key.pem;cert=./ssl/universa.com.pem' --hostname=universa.com chrome ./test --debug-on-fail"
   },
   "dependencies": {
     "handlebars": "^4.7.3",
